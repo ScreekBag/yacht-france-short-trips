@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Яхтинг: рынок Франции — короткие прогулки</title>
 <style>
-:root{--navy:#0c2036;--blue:#176b87;--aqua:#61c5c7;--sand:#f7f4ef;--ink:#172b3b;--muted:#617181;--white:#fff;--line:#e2e8ec;--gold:#e5ad56;--green:#2e7d6f}
+:root{--navy:#0c2036;--blue:#176b87;--aqua:#61c5c7;--sand:#f7f4ef;--ink:#172b3b;--muted:#617181;--white:#fff;--line:#e2e8ec;--gold:#e5ad56}
 *{box-sizing:border-box}
 body{margin:0;background:#0a1520;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
 .wrap{max-width:1280px;margin:0 auto;padding:24px 20px 60px}
-.hero{background:linear-gradient(125deg,#0c2036 0%,#174c65 55%,#258b99 100%);color:#fff;border-radius:20px;padding:40px 36px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(125deg,#0c2036 0%,#174c65 55%,#258b99 100%);color:#fff;border-radius:20px;padding:40px 36px;margin-bottom:28px}
 .hero h1{font-size:clamp(32px,4.2vw,52px);margin:0 0 12px;letter-spacing:-.03em;line-height:1.05}
-.hero .sub{font-size:18px;opacity:.92;max-width:680px}
+.hero .sub{font-size:18px;opacity:.92;max-width:720px}
 .tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-right:8px;margin-bottom:8px}
 .section{background:var(--sand);border-radius:18px;padding:28px 26px;margin-bottom:20px;box-shadow:0 8px 30px #0002}
 .section h2{margin:0 0 16px;font-size:26px;color:var(--navy);letter-spacing:-.02em}
@@ -23,12 +23,12 @@ body{margin:0;background:#0a1520;color:var(--ink);font-family:Inter,system-ui,-a
 .metric{font-size:32px;font-weight:800;color:var(--navy);letter-spacing:-.03em;margin:4px 0}
 .metric small{font-size:14px;font-weight:600;color:var(--muted)}
 .muted{color:var(--muted);font-size:13px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
 table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
 th{text-align:left;background:#eef3f4;color:#344c5b;font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:10px}
 td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 td strong{color:var(--navy)}
-.bar{height:8px;background:#e4eaec;border-radius:4px;overflow:hidden;margin-top:6px}
-.bar i{display:block;height:100%;background:var(--blue);border-radius:4px}
 .callout{background:#e7f4f2;border-left:4px solid var(--aqua);padding:14px 16px;border-radius:0 12px 12px 0;margin:14px 0}
 .warn{background:#fff6e6;border-left:4px solid var(--gold)}
 .footer{text-align:center;color:#8aa;font-size:12px;margin-top:20px}
@@ -40,69 +40,70 @@ td strong{color:var(--navy)}
   <div class="hero">
     <div><span class="tag">Market Intelligence</span><span class="tag">Oct 2026</span></div>
     <h1>Рынок коротких яхтенных прогулок<br>во Франции</h1>
-    <p class="sub">Детальный срез по GetYourGuide, Airbnb Experiences и локальным операторам. Объединено с ранее собранными данными по трём странам (Франция · Турция · Хорватия).</p>
+    <p class="sub">Детальный срез по <a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/" style="color:#fff;text-decoration:underline">GetYourGuide</a>, <a href="https://www.airbnb.com/experiences" style="color:#fff;text-decoration:underline">Airbnb Experiences</a> и локальным операторам. Объединено с данными по трём странам.</p>
   </div>
 
   <div class="section">
     <h2>Ключевые цифры по Франции — короткие туры (1–4 ч)</h2>
     <div class="grid g3">
-      <div class="card"><h3>Операторы boat tours</h3><div class="metric">40–50 <small>в Марселе</small></div><p class="muted">20–25 в Ницце, 15–25 на Лазурном Береге (Канны–Антиб)</p></div>
-      <div class="card"><h3>Цена shared-тура</h3><div class="metric">€55–100 <small>/ чел</small></div><p class="muted">За 2–3,5 часа. Топ-сегмент — Каланки и Ницца</p></div>
-      <div class="card"><h3>GetYourGuide</h3><div class="metric">500+ <small>листингов</small></div><p class="muted">По всей Франции (включая Сену). Морские короткие — сотни активных</p></div>
+      <div class="card"><h3>Операторы boat tours</h3><div class="metric">~2 000 <small>всего по Франции</small></div><p class="muted">Марсель ≈ 43 агентства, Ницца ≈ 22, Канны ≈ 18 (данные poidata 2025–2026)</p></div>
+      <div class="card"><h3>Цена shared-тура</h3><div class="metric">€55–100 <small>/ чел</small></div><p class="muted">За 2–3,5 часа. Топ-сегмент — Каланки (€70–100) и Ницца (€55–90)</p></div>
+      <div class="card"><h3>GetYourGuide France</h3><div class="metric">500+ <small>листингов</small></div><p class="muted"><a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/">Cruises & boat tours</a> — 500+ результатов. Морские короткие — сотни активных</p></div>
     </div>
   </div>
 
   <div class="section">
-    <h2>Цены и отзывы: Марсель vs Лазурный Берег</h2>
+    <h2>Цены и отзывы: конкретные примеры</h2>
     <div class="grid g2">
       <div class="card">
         <h3>Марсель · Каланки</h3>
         <table>
-          <tr><th>Длительность</th><th>Цена</th><th>Отзывы (топ)</th></tr>
-          <tr><td>2,5–3,5 ч</td><td><strong>€70–100</strong></td><td>1 700+ (4,7)</td></tr>
-          <tr><td>4–4,5 ч</td><td>€85–120</td><td>сотни</td></tr>
-          <tr><td>7 ч + обед</td><td>€110–150</td><td>400+</td></tr>
+          <tr><th>Тур</th><th>Цена</th><th>Отзывы</th></tr>
+          <tr><td><a href="https://www.getyourguide.com/marseille-l292/from-marseille-iconic-calanques-boat-tour-with-swimming-t747138/">Iconic Calanques (Bleu Evasion)</a></td><td><strong>от $89–92</strong></td><td>1 749 (4,7)</td></tr>
+          <tr><td><a href="https://www.getyourguide.com/south-of-france-l199847/marseille-boat-tour-to-the-calanques-national-park-half-day-t737069/">Half-Day ECO-CALANQUES</a></td><td>от £73 / $99</td><td>88–233 (4,7–4,8)</td></tr>
+          <tr><td><a href="https://www.getyourguide.com/marseille-l292/all-day-cruise-in-the-calanques-on-a-classic-ketch-t497075/">Day sail + lunch</a></td><td>от £117</td><td>411 (4,8)</td></tr>
         </table>
-        <p class="muted">Ключевые игроки: ECO-CALANQUES, Goélette Alliance, Bleu Evasion, Croisières Marseille Calanques</p>
+        <p class="muted">Другие: Goélette Alliance, Croisières Marseille Calanques (флот до 275 мест), ECO-CALANQUES (до 12 мест)</p>
       </div>
       <div class="card">
-        <h3>Ницца · Канны · Антиб</h3>
+        <h3>Ницца · Nissa Croisières</h3>
         <table>
-          <tr><th>Формат</th><th>Цена</th><th>Пример</th></tr>
-          <tr><td>1,5–2 ч sunset</td><td><strong>€55–75</strong></td><td>Nissa Croisières</td></tr>
-          <tr><td>2–3 ч</td><td>€65–90</td><td>Mala Cave, Cap Ferrat</td></tr>
-          <tr><td>3–4 ч</td><td>€80–120</td><td>Катамараны</td></tr>
+          <tr><th>Формат</th><th>Цена</th><th>Отзывы</th></tr>
+          <tr><td><a href="https://www.tripadvisor.com/Attraction_Review-g187234-d25453311-Reviews-Nissa_Croisieres-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">Nissa Croisières (общий)</a></td><td>—</td><td>295–302 (4,8)</td></tr>
+          <tr><td>Mala Cave + snorkeling (2 ч)</td><td><strong>€65–75</strong></td><td>61–63 (4,9)</td></tr>
+          <tr><td>Half-day Mala + Villefranche (3 ч)</td><td>€75–87</td><td>95–98 (4,7)</td></tr>
+          <tr><td>Sunset + aperitif</td><td>от $64</td><td>31+ (4,7)</td></tr>
         </table>
-        <p class="muted">Nissa Croisières: 295+ отзывов на Tripadvisor (≈4,8), часто sell-out</p>
+        <p class="muted">Часто “Likely to Sell Out”. #4–6 из ~50 boat tours в Ницце</p>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>Airbnb Experiences — сильный social proof</h2>
+    <h2>Airbnb Experiences — конкретные цифры</h2>
     <div class="grid g3">
-      <div class="card"><h3>Motor yacht Côte d’Azur</h3><div class="metric">4,98–4,99</div><p>300–500+ отзывов · Bertrand (Antibes)<br><span class="muted">4–4,5 ч, до 10 гостей</span></p></div>
-      <div class="card"><h3>Catamaran Calanques</h3><div class="metric">4,9</div><p>500–700+ отзывов · François (Марсель)<br><span class="muted">Полудень, bring-your-own-food</span></p></div>
-      <div class="card"><h3>Sunset / Classic yacht</h3><div class="metric">5,0 / 4,99</div><p>150–340 отзывов<br><span class="muted">Hyères, Villefranche — премиум-сегмент</span></p></div>
+      <div class="card"><h3><a href="https://www.airbnb.com/experiences/4790701">Motor yacht Côte d’Azur</a></h3><div class="metric">4,98–4,99</div><p>Bertrand (Antibes / Villeneuve-Loubet)<br>308–504 отзывов<br><span class="muted">4–4,5 ч, private groups welcome</span></p></div>
+      <div class="card"><h3>Catamaran Calanques</h3><div class="metric">4,9</div><p>François (Марсель)<br>500–700+ отзывов<br><span class="muted">Полудень, bring-your-own-food</span></p></div>
+      <div class="card"><h3>Sunset / Classic</h3><div class="metric">5,0 / 4,99</div><p>150–340 отзывов<br><span class="muted">Hyères, Villefranche</span></p></div>
     </div>
-    <div class="callout">На Airbnb хосты часто — профессиональные скипперы с 15–20+ годами опыта. Рейтинги стабильно 4,9+. Это отличный канал для коротких, «личных» прогулок.</div>
+    <div class="callout">На Airbnb хосты часто — профессиональные скипперы с 15–20+ годами опыта. Рейтинги стабильно 4,9+.</div>
   </div>
 
   <div class="section">
-    <h2>Сравнение трёх стран (из предыдущего исследования)</h2>
+    <h2>Сравнение трёх стран</h2>
     <table>
-      <thead><tr><th>Страна</th><th>Сильная сторона</th><th>Недельный чартер (сигнал)</th><th>Короткие прогулки</th></tr></thead>
+      <thead><tr><th>Страна</th><th>Сильная сторона</th><th>Недельный чартер</th><th>Короткие прогулки</th></tr></thead>
       <tbody>
-        <tr><td><strong>Франция</strong></td><td>Дневные + премиум</td><td>951 яхт в Chartera</td><td><strong>Самый зрелый рынок</strong></td></tr>
-        <tr><td><strong>Турция</strong></td><td>Высокий недельный чек</td><td>€4 752 медиана</td><td>Меньше данных по коротким</td></tr>
+        <tr><td><strong>Франция</strong></td><td>Дневные + премиум</td><td>951 яхт (Chartera)</td><td><strong>Самый зрелый рынок</strong></td></tr>
+        <tr><td><strong>Турция</strong></td><td>Высокий недельный чек</td><td>€4 752 медиана</td><td>Меньше данных</td></tr>
         <tr><td><strong>Хорватия</strong></td><td>Плотность флота</td><td>3 408 яхт</td><td>Больше недельный фокус</td></tr>
       </tbody>
     </table>
-    <div class="callout warn"><strong>Вывод:</strong> Франция — лучший рынок для тестирования коротких (часовых/двухчасовых) прогулок. Высокая конкуренция на GetYourGuide и Airbnb, но и высокий спрос + готовность платить €55–100 за 2–3 часа.</div>
+    <div class="callout warn"><strong>Вывод:</strong> Франция — лучший рынок для тестирования коротких прогулок. Высокая конкуренция на <a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/">GetYourGuide</a> и Airbnb, но высокий спрос и готовность платить €55–100 за 2–3 часа.</div>
   </div>
 
   <div class="section">
-    <h2>Частные туры и экономика</h2>
+    <h2>Частные туры</h2>
     <div class="grid g2">
       <div class="card">
         <h3>Private pricing</h3>
@@ -111,11 +112,11 @@ td strong{color:var(--navy)}
         <p class="muted">На GetYourGuide много частных предложений от €1 400–2 300</p>
       </div>
       <div class="card">
-        <h3>Что измерять дальше</h3>
+        <h3>Что измерять дальше (календари)</h3>
         <ul>
-          <li>Реальная загрузка по датам (календари)</li>
-          <li>Доля повторных бронирований</li>
-          <li>Стоимость лида vs комиссия платформ</li>
+          <li>Доступность слотов на ближайшие 4–6 недель</li>
+          <li>Доля “sold out” / “likely to sell out”</li>
+          <li>Средняя загрузка по дням недели</li>
           <li>Сезонность по портам</li>
         </ul>
       </div>
@@ -123,13 +124,15 @@ td strong{color:var(--navy)}
   </div>
 
   <div class="section">
-    <h2>Рекомендация для пилота</h2>
-    <div class="callout">
-      <strong>Приоритет:</strong> Марсель (Каланки) + Ницца / Антиб.<br>
-      Собирать одинаковый набор полей: цена, длительность, вместимость, отзывы, доступность на ближайшие 4–6 недель.<br>
-      Тестировать как shared-формат (€55–100), так и private (€1k+).
-    </div>
-    <p class="muted">Источники: GetYourGuide (500+ cruises & boat tours), Airbnb Experiences, Tripadvisor (Nissa Croisières и др.), Chartera Q2 2026, Click&Boat. Данные — снимки каталогов и публичных листингов, не полный GMV рынка.</p>
+    <h2>Источники</h2>
+    <ul>
+      <li><a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/">GetYourGuide — France Cruises & boat tours (500+)</a></li>
+      <li><a href="https://www.getyourguide.com/marseille-l292/from-marseille-iconic-calanques-boat-tour-with-swimming-t747138/">Iconic Calanques Boat Tour (1 749 отзывов)</a></li>
+      <li><a href="https://www.tripadvisor.com/Attraction_Review-g187234-d25453311-Reviews-Nissa_Croisieres-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">Nissa Croisières на Tripadvisor (~300 отзывов, 4,8)</a></li>
+      <li><a href="https://www.airbnb.com/experiences/4790701">Airbnb Experience — Bertrand motor yacht (4,98–4,99, 300–500+ отзывов)</a></li>
+      <li>Chartera Q2 2026, Click&Boat, данные poidata по агентствам</li>
+    </ul>
+    <p class="muted">Данные — снимки публичных листингов на октябрь 2026. Не полный GMV рынка.</p>
   </div>
 
   <div class="footer">Рабочая версия · не инвестиционный прогноз · Oct 2026</div>
