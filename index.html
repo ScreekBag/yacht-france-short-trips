@@ -3,129 +3,82 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Яхтинг: рынок Франции — короткие прогулки</title>
+<title>Рынок коротких яхтенных прогулок — Франция</title>
 <style>
-:root{--navy:#0c2036;--blue:#176b87;--aqua:#61c5c7;--sand:#f7f4ef;--ink:#172b3b;--muted:#617181;--line:#e2e8ec;--gold:#e5ad56}
+:root{--navy:#0c2036;--blue:#176b87;--aqua:#61c5c7;--sand:#f7f4ef;--ink:#172b3b;--muted:#617181;--line:#e2e8ec}
 *{box-sizing:border-box}
-body{margin:0;background:#0a1520;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
-.wrap{max-width:1280px;margin:0 auto;padding:24px 20px 60px}
-.hero{background:linear-gradient(125deg,#0c2036 0%,#174c65 55%,#258b99 100%);color:#fff;border-radius:20px;padding:40px 36px;margin-bottom:28px}
-.hero h1{font-size:clamp(32px,4.2vw,52px);margin:0 0 12px;letter-spacing:-.03em;line-height:1.05}
-.hero .sub{font-size:18px;opacity:.92;max-width:720px}
-.tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-right:8px;margin-bottom:8px}
-.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:28px}
-.kpi{background:#fff;border-radius:16px;padding:20px;text-align:center;box-shadow:0 8px 30px #0002;text-decoration:none;color:inherit;display:block;transition:.2s}
-.kpi:hover{transform:translateY(-3px);box-shadow:0 12px 40px #0003}
-.kpi .num{font-size:36px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
-.kpi .label{font-size:14px;color:var(--muted);margin-top:4px}
-.section{background:var(--sand);border-radius:18px;padding:28px 26px;margin-bottom:20px;box-shadow:0 8px 30px #0002}
-.section h2{margin:0 0 16px;font-size:26px;color:var(--navy);letter-spacing:-.02em}
-.grid{display:grid;gap:14px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
-.card h3{margin:0 0 8px;font-size:16px;color:var(--navy)}
-.metric{font-size:28px;font-weight:800;color:var(--navy)}
-.muted{color:var(--muted);font-size:13px}
-a{color:var(--blue);text-decoration:none}
-a:hover{text-decoration:underline}
-table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
-th{text-align:left;background:#eef3f4;color:#344c5b;font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:10px}
-td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
-.callout{background:#e7f4f2;border-left:4px solid var(--aqua);padding:14px 16px;border-radius:0 12px 12px 0;margin:14px 0}
-.warn{background:#fff6e6;border-left:4px solid var(--gold)}
-.footer{text-align:center;color:#8aa;font-size:12px;margin-top:20px}
-@media(max-width:720px){.hero{padding:28px 20px}.kpi .num{font-size:28px}}
+body{margin:0;background:#0a1520;color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.45}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 18px 50px}
+.hero{background:linear-gradient(125deg,#0c2036,#174c65 55%,#258b99);color:#fff;border-radius:18px;padding:36px 32px;margin-bottom:24px}
+.hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 10px;letter-spacing:-.03em;line-height:1.1}
+.hero p{margin:0;opacity:.92;font-size:17px;max-width:640px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px}
+.kpi a{background:#fff;border-radius:14px;padding:18px 14px;text-align:center;text-decoration:none;color:inherit;box-shadow:0 6px 20px #0002;display:block}
+.kpi .n{font-size:32px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+.kpi .l{font-size:13px;color:var(--muted);margin-top:4px}
+.section{background:var(--sand);border-radius:16px;padding:24px 22px;margin-bottom:18px}
+.section h2{margin:0 0 14px;font-size:22px;color:var(--navy)}
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border-radius:12px;overflow:hidden}
+th{text-align:left;background:#eef3f4;color:#344c5b;font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:10px 12px}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+a{color:var(--blue)}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+.footer{text-align:center;color:#8aa;font-size:12px;margin-top:16px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hero">
-    <div><span class="tag">Market Intelligence</span><span class="tag">Oct 2026</span></div>
-    <h1>Рынок коротких яхтенных прогулок<br>во Франции</h1>
-    <p class="sub">Основные цифры сверху ведут в <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit" style="color:#fff;text-decoration:underline">Google Таблицу</a> с деталями. Срез по GetYourGuide, Airbnb и парусным яхтам.</p>
+    <h1>Короткие яхтенные прогулки<br>во Франции</h1>
+    <p>Ключевые цифры и конкретные операторы. Полные данные и ссылки — в <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit" style="color:#fff;text-decoration:underline">Google Таблице</a>.</p>
   </div>
 
-  <div class="kpi-grid">
-    <a class="kpi" href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank">
-      <div class="num">~2 000</div>
-      <div class="label">операторов boat tours<br>по Франции</div>
-    </a>
-    <a class="kpi" href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank">
-      <div class="num">500+</div>
-      <div class="label">листингов<br>GetYourGuide</div>
-    </a>
-    <a class="kpi" href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank">
-      <div class="num">€55–100</div>
-      <div class="label">за 2–3,5 ч<br>shared-тур</div>
-    </a>
-    <a class="kpi" href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank">
-      <div class="num">1 749</div>
-      <div class="label">отзывов<br>Iconic Calanques</div>
-    </a>
-    <a class="kpi" href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=745728216" target="_blank">
-      <div class="num">172</div>
-      <div class="label">парусных туров<br>на GetYourGuide</div>
-    </a>
+  <div class="kpi">
+    <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank"><div class="n">~2 000</div><div class="l">агентств boat tours<br>по Франции</div></a>
+    <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank"><div class="n">500+</div><div class="l">листингов<br>GetYourGuide</div></a>
+    <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1996431205" target="_blank"><div class="n">€55–100</div><div class="l">за 2–3,5 ч<br>shared</div></a>
+    <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1213520862" target="_blank"><div class="n">12+</div><div class="l">конкретных<br>операторов в таблице</div></a>
   </div>
 
   <div class="section">
-    <h2>Ключевые примеры (моторы и паруса)</h2>
-    <div class="grid g2">
-      <div class="card">
-        <h3>Моторные — Марсель / Ницца</h3>
-        <table>
-          <tr><th>Тур</th><th>Цена</th><th>Отзывы</th></tr>
-          <tr><td><a href="https://www.getyourguide.com/marseille-l292/from-marseille-iconic-calanques-boat-tour-with-swimming-t747138/">Iconic Calanques</a></td><td>от $89–92</td><td>1 749 (4,7)</td></tr>
-          <tr><td><a href="https://www.tripadvisor.com/Attraction_Review-g187234-d25453311-Reviews-Nissa_Croisieres-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">Nissa Croisières</a></td><td>€65–87</td><td>~300 (4,8)</td></tr>
-          <tr><td><a href="https://www.airbnb.com/experiences/4790701">Bertrand (Airbnb)</a></td><td>private</td><td>300–504 (4,98–4,99)</td></tr>
-        </table>
-      </div>
-      <div class="card">
-        <h3>Парусные яхты</h3>
-        <table>
-          <tr><th>Тур</th><th>Цена / формат</th><th>Отзывы</th></tr>
-          <tr><td><a href="https://www.getyourguide.com/marseille-l292/all-day-cruise-in-the-calanques-on-a-classic-ketch-t497075/">Day sail + lunch (Марсель)</a></td><td>от £117 / 7 ч</td><td>411 (4,8)</td></tr>
-          <tr><td><a href="https://www.airbnb.com/experiences/858186">Classic Yacht Cannes (Alex)</a></td><td>half day private</td><td>413–451 (4,99)</td></tr>
-          <tr><td><a href="https://www.airbnb.com/experiences/1949639">1930s Heron II</a></td><td>4 ч private</td><td>298–335 (4,99)</td></tr>
-        </table>
-        <p class="muted">На GetYourGuide: ~35 sailboat-туров в Марселе, 172 по Франции.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Парусные яхты — отдельный срез</h2>
-    <div class="callout">
-      Парусный сегмент заметно меньше моторного, но с высоким качеством отзывов (часто 4,9+). 
-      Типичные форматы: half-day / full-day с обедом, sunset, private groups до 6–8 человек. 
-      Цены выше (особенно private), социальный пруф сильный на Airbnb.
-    </div>
-    <p><a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=745728216">→ Полная таблица парусных туров в Google Sheets</a></p>
-  </div>
-
-  <div class="section">
-    <h2>Сравнение трёх стран</h2>
+    <h2>Конкретные операторы (город · сайт · бронирование)</h2>
     <table>
-      <thead><tr><th>Страна</th><th>Сильная сторона</th><th>Недельный чартер</th><th>Короткие прогулки</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Франция</strong></td><td>Дневные + премиум</td><td>951 яхт (Chartera)</td><td><strong>Самый зрелый</strong></td></tr>
-        <tr><td><strong>Турция</strong></td><td>Высокий недельный чек</td><td>€4 752 медиана</td><td>Меньше данных</td></tr>
-        <tr><td><strong>Хорватия</strong></td><td>Плотность флота</td><td>3 408 яхт</td><td>Больше недельный фокус</td></tr>
-      </tbody>
+      <tr><th>Оператор</th><th>Город</th><th>Сайт</th><th>Бронирование</th></tr>
+      <tr><td>Croisières Marseille Calanques</td><td>Марсель</td><td><a href="https://www.croisieres-marseille-calanques.com">сайт</a></td><td>сайт</td></tr>
+      <tr><td>Bleu Evasion</td><td>Марсель</td><td><a href="https://www.bleuevasion.fr">сайт</a></td><td>GetYourGuide (1749 отзывов)</td></tr>
+      <tr><td>ECO-CALANQUES</td><td>Марсель</td><td><a href="https://www.eco-calanques.com">сайт</a></td><td>GetYourGuide</td></tr>
+      <tr><td>Localanque</td><td>Марсель</td><td><a href="https://www.localanque.com">сайт</a></td><td>сайт</td></tr>
+      <tr><td>Icard Maritime</td><td>Марсель</td><td><a href="https://www.calanques-if.com">сайт</a></td><td>сайт</td></tr>
+      <tr><td>Bleu Calanque</td><td>Марсель</td><td><a href="https://www.bleucalanque.com">сайт</a></td><td>сайт</td></tr>
+      <tr><td>Nissa Croisières</td><td>Ницца</td><td><a href="https://nissacroisieres.com">сайт</a></td><td><a href="https://boattrip-nice.com/booking/">календарь бронирования</a></td></tr>
+      <tr><td>Bertrand (Airbnb)</td><td>Antibes</td><td>—</td><td><a href="https://www.airbnb.com/experiences/4790701">Airbnb (календарь)</a></td></tr>
+      <tr><td>Alex Classic Yacht</td><td>Канны</td><td>—</td><td><a href="https://www.airbnb.com/experiences/858186">Airbnb (календарь)</a></td></tr>
+      <tr><td>Aaron Heron II</td><td>Villefranche</td><td>—</td><td><a href="https://www.airbnb.com/experiences/1949639">Airbnb (календарь)</a></td></tr>
     </table>
+    <p class="note">Полный список с типами лодок и примечаниями — <a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit#gid=1213520862">во вкладке «Примеры туров» Google Таблицы</a>. Цифра ~2000 — агрегат из бизнес-директорий (poidata), а не полный открытый список с сайтами.</p>
   </div>
 
   <div class="section">
-    <h2>Источники и таблица</h2>
-    <p><strong><a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit">Google Таблица со всеми цифрами</a></strong> — ключевые метрики, примеры туров и парусный сегмент.</p>
+    <h2>Ключевые наблюдения</h2>
     <ul>
-      <li><a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/">GetYourGuide France Cruises & boat tours</a></li>
-      <li><a href="https://www.getyourguide.com/france-l169008/sailboat-tours-tc51/">GetYourGuide France Sailboat tours (172)</a></li>
-      <li><a href="https://www.getyourguide.com/marseille-l292/sailboat-tours-tc51/">GetYourGuide Marseille Sailboat (~35)</a></li>
+      <li><strong>Марсель (Каланки)</strong> — самая высокая плотность и зрелость. Есть как крупные регулярные перевозчики (Croisières Marseille Calanques, флот до 275 мест), так и small-group / private (Bleu Evasion, ECO-CALANQUES, Localanque).</li>
+      <li><strong>Ницца / Лазурный Берег</strong> — сильный премиум и sunset-сегмент. У Nissa Croisières открытый календарь бронирования на сайте.</li>
+      <li><strong>Парус</strong> — меньше объём, выше качество отзывов (часто 4,9+ на Airbnb). Типично private / half-day.</li>
+      <li>Цены shared 2–3,5 ч: €55–100. Private 2,5–4 ч: €1 000–2 500 за группу.</li>
     </ul>
   </div>
 
-  <div class="footer">Рабочая версия · Oct 2026 · данные — публичные снимки листингов</div>
+  <div class="section">
+    <h2>Источники</h2>
+    <ul>
+      <li><a href="https://www.getyourguide.com/france-l169008/cruises-boat-tours-tc48/">GetYourGuide France — Cruises & boat tours (500+)</a></li>
+      <li><a href="https://www.getyourguide.com/france-l169008/sailboat-tours-tc51/">GetYourGuide France — Sailboat tours (172)</a></li>
+      <li><a href="https://www.getyourguide.com/marseille-l292/from-marseille-iconic-calanques-boat-tour-with-swimming-t747138/">Iconic Calanques (1 749 отзывов)</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1nGeYQJ7iPuKo1T6EqiaEGQa-ZVnXUidWvNJlQyaQEG8/edit">Google Таблица с операторами и цифрами</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">Октябрь 2026 · данные — публичные листинги и сайты операторов</div>
 </div>
 </body>
 </html>
